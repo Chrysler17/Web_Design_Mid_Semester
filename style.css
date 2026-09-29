@@ -38,7 +38,7 @@ body{
     color: #fdb724;
     text-align: left;
     padding: 32rem 2rem 5rem 3rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../Images/VOCS_Mars_Unklab.jpeg") no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("VOCS_Mars_Unklab.jpeg") no-repeat center/cover;
 }
 
 .site-header {
