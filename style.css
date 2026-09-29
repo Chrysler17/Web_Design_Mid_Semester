@@ -1,0 +1,202 @@
+body{
+    background-color: white;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1f67af;
+    line-height: 1;
+}
+
+.brand {
+    color: #fdb724;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+.site-nav ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+.site-nav a{
+    text-decoration: none;
+    color: #fdb724;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.site-nav a:hover{
+    color: white;
+}
+
+.sampul {
+    position: relative;
+    text-align: left;
+    color: #fdb724;
+    text-align: left;
+    padding: 32rem 2rem 5rem 3rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../Images/VOCS_Mars_Unklab.jpeg") no-repeat center/cover;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1f67af;
+    padding: 0.8rem 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.btn{
+    display: inline-block;
+    background: #1f67af;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.btn:hover{
+    background: #fdb724;
+    color: #1f67af;
+}
+
+section{
+    padding: 1rem 1.2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #fdb724;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    border: 2px solid #fdb724;
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+
+.galeri {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 160px;
+    margin-top: 1.5rem;
+}
+
+.galeri figure {
+    margin: 0;
+    position: relative;
+}
+
+.galeri .utama {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.galeri img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #fdb724;
+    display: block;
+}
+
+.galeri figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0.4rem;
+    padding: 0.3rem 0.6rem;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fdb724;
+    font-size: 0.8rem;
+    border-radius: 6px;
+}
+
+@media (max-width: 700px) {
+    .galeri {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 140px;
+    }
+    .galeri .utama {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+fieldset {
+    border: 1px solid #fdb724;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+}
+
+legend {
+    padding: 0.2rem 0.5rem;
+    color: #fdb724;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 97%;
+    padding: 1.1rem;
+    border: 1px solid #fdb724;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    font-weight: 700;
+    border: none;
+    background: #fdb724;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background-color: #1f67af;
+    color: #fdb724;
+}
+
+.site-footer {
+    background: #1f67af;
+    text-align: center;
+    color: #fdb724;
+    padding: 0.5rem;
+    margin-top: 0.001rem;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
